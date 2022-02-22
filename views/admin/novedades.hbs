@@ -1,0 +1,58 @@
+<div class="containernovedades">
+
+    <div class="contenido">
+        <p class="saludo">Hola {{usuario}} </p>
+    </div> 
+    <div class="contenido2">    
+        <p class="cerrar"><a class="boton" 
+        href="/admin/login/logout">Cerrar Sesion <i class="fa-solid fa-arrow-right-from-bracket"></i></a></p>
+    </div> 
+</div>
+
+<div class="containerlistado">
+    <div class="listado">
+        <p class="listadotitulo">Nuevas novedades</p>
+    </div>
+    <div class="btnnuevo">    
+        <p class="nuevo"><a class="boton" 
+        href="/admin/novedades/agregar"> Agregar novedad <i class="fa-solid fa-circle-plus"></i></a></p>
+    </div> 
+
+</div>
+
+<div class="tabla">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="primer" scope="col">#</th>
+                <th class="tituloth" scope="col">Titulo</th>
+                <th class="imagenth" scope="col">Imagen</th>
+                <th class="acciones" scope="col">Acciones</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            {{#each novedades}}
+            <tr>
+                 <th scope="row">{{id}}</th>
+                 <td>{{titulo}}</td>
+                 <td class="imagentd">{{{imagen}}}</td>
+                 <td>
+                     <a class="btnpencil" href="/admin/novedades/modificar/{{id}}"> <i class="fa-solid fa-pencil"></i>  </a>
+                     <a class="btntrash" href="/admin/novedades/eliminar/{{id}}"> <i class="fa-solid fa-trash"></i>  </a>
+                 </td>
+                 
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+
+
+
+</div>
+
+
+
+
+

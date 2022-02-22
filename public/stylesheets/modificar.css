@@ -1,0 +1,17 @@
+.containerelimimg {
+  margin-top: 50px;
+}
+.btnform {
+  position: relative;
+  left: 0px;
+  bottom: 100px;
+}
+
+.etiquetaelim {
+  position: absolute;
+  bottom: 1px;
+}
+.etiquetaelim input {
+  position: relative;
+  top: 6px;
+}

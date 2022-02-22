@@ -1,0 +1,50 @@
+.container {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 15vh;
+
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  color: black;
+  margin-top: 20px;
+}
+input {
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  text-align: center;
+  color: black;
+}
+
+.btns {
+  margin: 15px auto;
+}
+
+button {
+  color: black;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+
+button:hover {
+  background: #690939;
+  color: white;
+}
+
+p {
+  position: relative;
+  bottom: 40px;
+}

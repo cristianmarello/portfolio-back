@@ -1,0 +1,24 @@
+
+
+<div class="containerformulario">
+    <div class="nuevnov">Agregar nueva novedad</div>
+    <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data" >
+              
+            <textarea type="text" name="titulo" class="tituloform" placeholder="Titulo"></textarea>
+              
+            <textarea type="text" name="subtitulo" class="subtituloform" placeholder="subtitulo"></textarea>
+              
+            <textarea type="text" name="cuerpo" class="cuerpoform" placeholder="Cuerpo"></textarea>
+     
+            <div class="imagenform">
+                <label >Imagen:<input style="color: white;" type="file" name="imagen" id="imagen"/></label>
+            </div>
+
+        <button type="submit" class="btnform">Guardar</button>
+
+    </form>
+
+        {{#if error}}
+            <h5>{{message}}</h5>
+        {{/if}}
+ </div>

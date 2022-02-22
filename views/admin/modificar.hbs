@@ -1,0 +1,32 @@
+
+
+
+<div class="containerformulario">
+    <div class="nuevnov">modificar nueva novedad</div>
+    <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
+             <input type="hidden" value="{{novedad.id}}" name="id"  > 
+              <textarea type="text" name="titulo" class="tituloform" placeholder="Titulo">{{novedad.titulo}}</textarea>
+              
+              <textarea type="text" name="subtitulo" class="subtituloform" placeholder="subtitulo">{{novedad.subtitulo}}</textarea>
+              
+              <textarea type="text" name="cuerpo" class="cuerpoform" placeholder="Cuerpo">{{novedad.cuerpo}}</textarea>
+     
+              <div class="containerelimimg">
+                  <p>
+                      <label>Imagen:<input type="file" name="imagen" id="imagen" style="color: white;"></label>
+                  </p>
+                  <p>
+                      <label class="etiquetaelim"><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen actual?</label>
+                      <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+                  </p>
+
+              </div>
+
+        <button type="submit" class="btnform">Guardar</button>
+
+    </form>
+
+        {{#if error}}
+            <h5>{{message}}</h5>
+        {{/if}}
+ </div>

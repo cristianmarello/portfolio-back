@@ -1,0 +1,65 @@
+.cerrar {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.saludo {
+  font-size: 20px;
+}
+.containernovedades {
+  margin-top: 50px;
+  display: flex;
+}
+
+.contenido2 {
+  position: absolute;
+  right: 200px;
+  background: #e03a5d;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.containerlistado {
+  margin-top: 100px;
+  display: flex;
+}
+
+.btnnuevo {
+  position: absolute;
+  right: 200px;
+  background: #087228;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.listado {
+  font-size: 25px;
+  position: absolute;
+  left: 200px;
+}
+
+.tabla {
+  margin-top: 200px;
+}
+
+thead {
+  width: 800px;
+}
+
+table {
+  width: 1050px;
+  position: absolute;
+  left: 200px;
+}
+
+.acciones {
+  width: 80px;
+}
+.primer {
+  width: 80px;
+}
+
+.imagentd {
+  justify-content: center;
+  display: flex;
+}

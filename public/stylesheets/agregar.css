@@ -1,0 +1,33 @@
+.containerformulario {
+  margin-top: 50px;
+}
+
+.tituloform {
+  width: 500px;
+}
+
+.subtituloform {
+  width: 500px;
+  height: 80px;
+}
+
+.cuerpoform {
+  width: 500px;
+  height: 100px;
+}
+
+.btnform {
+  position: relative;
+  left: 0px;
+  top: 20px;
+}
+
+.nuevnov {
+  font-size: 20px;
+}
+
+textarea {
+  color: black;
+  margin: 5px;
+  border-radius: 10px;
+}
